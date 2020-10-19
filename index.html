@@ -6,33 +6,39 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="font/fontawesome-free-5.15.1/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="shortcut icon" href="./img/logo.png">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>BOOTTRAC</title>
+    
 </head>
 <body>
-    <div class="all">
-        <div class="header">
-            <div class="header_headertop">
-            <div class="header_navtop">         <!--HEADER TOP-->
-                <div class="header_navtop-left">
-                    <ul>
-                        <li>
+    <div class="all container-fluid " style="padding: 0;">
+        <div class="header " >
+            <div class="header_headertop d-flex align-items-center justify-content-center  " style="padding: 0;">
+            <div class="header_navtop d-flex align-items-center " style="width: 1000px; padding: 0;">         <!--HEADER TOP-->
+                <div class="header_navtop-left    ">
+                    <ul class="d-flex align-items-center" >
+                        <li class="d-flex align-items-center" >
                             <i class="fas fa-user-circle"></i>
                             <a href="#">My account</a></li>
-                        <li>
+                        <li class="d-flex align-items-center" >
                             <i class="fas fa-arrows-alt-h"></i>
                             <a href="#">Oder trackingt</a></li>
                     </ul>
                 </div>                   
-                <div class="header_navtop-right">
-                    <div class="search">
+                <div class="header_navtop-right d-flex align-items-center ">
+                    <div class="search d-flex align-items-center ">
                         <input type="text" class="search_input" placeholder="Search...">
                         <i class="fas fa-search"></i>
                     </div>
-                    <div class="phone">
+                    <div class="phone d-flex align-items-center ">
                         <i class="fas fa-phone-alt"></i>
                         <p>0905 66 33 08</p>
                     </div>
-                    <div class="blog">
+                    <div class="blog d-flex align-items-center">
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-twitter-square"></i>
                         <i class="fab fa-internet-explorer"></i>
@@ -41,13 +47,29 @@
             </div>                              <!-- end HEADER TOP-->
             </div>
 
-            <div class="header_headerbottom">   <!-- HEADER BOTTOM-->
-            <div class="header_bottom">
+            <div class="header_headerbottom d-flex align-items-center">   <!-- HEADER BOTTOM-->
+            <div class="header_bottom d-flex justify-content-between align-items-center">
                 <div class="logo">
                     <img src="./img/logo.png" alt="logo" width="50px" height="50px">
                 </div>
-                <div class="nav">
-                    <ul class="nav_nav">
+                <div style="flex:1">
+                    <div class="dropdown d-sm-none d-flex justify-content-start " style="padding:  0 0 0 20px;">
+                        <button class="btn dropdown-toggle d-flex align-items-center"
+                                type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" >
+                                <i class="fas fa-bars" style="color: white;"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <a class="dropdown-item" href="#!">Action</a>
+                          <a class="dropdown-item" href="#!">Another action</a>
+                          <a class="dropdown-item" href="#!">Another action</a>
+                          <a class="dropdown-item" href="#!">Another action</a>
+                          <a class="dropdown-item" href="#!">Another action</a>
+                        </div>
+                    </div>
+
+                    <div class="nav  d-none d-sm-block">
+                    <ul class="nav_nav d-flex justify-content-around align-items-center">
                         <li class="active"><a href="#" style="color: white;" >Home</a></li>
                         <li><a href="#news">News</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -55,21 +77,18 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#about">About</a></li>
                     </ul>
+                    </div>
                 </div>
                 <div class="box">
                     <i class="fas fa-box-open"></i>
-                    <a href="#">$0.00</a>
+                    <a href="#" style="color:rgb(80, 142, 0);">$0.00</a>
                 </div>
             </div>
             </div>                            <!-- end HEADER BOTTOM-->
         </div>
 
 
-        <div class="slideshow">                <!--------SLIDESHOW----->
-            <div class="muiten">
-                <a href=""><i class="fas fa-angle-left"></i></a>
-                <a href=""></a><i class="fas fa-angle-right"></i></a>
-            </div>
+        <div class="slideshow d-none d-sm-block">                <!--------SLIDESHOW----->
             <div class="slideshow_all">
                 <h1>VISIT SEVEN WEED DISPENSARY<h1>
                 <h6>We offer a wide selection of preminum cannabis products.<br>Come by for a visit to one of our brand stores!</h6>
@@ -85,8 +104,9 @@
                     <h3>Welcome to Seven Weed - one of the oldest & most <br>
                         trusted cannabis dispensaries in Los Angeles, California</h3>
                 </div>
-                <div class="container_bottom">
-                    <div class="container_bottom-left">
+                <div class="container_bottom row">
+                    <div class="container_bottom-img col-md-6 col-sm-12 "></div>
+                    <div class="container_bottom-left col-md-6 col-sm-12 ">
                         <h6>Proin ollicitudin nibh interdum - mollis dolor auctor dolor pretium, nec faucibus turpis elefend.</h6>
                         <p class="comment" >Duis auctor at lorem ipsum dolor nulla glavriadac - nibh inerdum & interdum vel sollicitudin bibhlod</p>
                         <p class="comment1" >Suspondisso auctor volutpat turpis, vel sollicitudin nibh inter dum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur adio!</p>
@@ -101,7 +121,7 @@
                             </a>
                         </div>
                     </div >
-                    <div class="container_bottom-img"></div>
+                    
                 </div>
                 </div>
             </div>                          <!------end CONTAINER----->
